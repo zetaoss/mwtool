@@ -30,9 +30,13 @@ archives:
       - README.md
 
 winget:
-  - name: mwcli
+  # name is also the winget Moniker, so `winget install mw` works; the package
+  # name and manifest path stay mwcli.
+  - name: mw
+    package_name: mwcli
     publisher: mwcli
     package_identifier: mwcli.mwcli
+    path: "manifests/m/mwcli/mwcli/{{ .Version }}"
     short_description: "Unofficial but universal MediaWiki CLI. Like gh, but for MediaWiki."
     description: "mw logs in to any MediaWiki wiki, reads and edits pages and makes Action API requests from the command line."
     license: Apache-2.0

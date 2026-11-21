@@ -17,7 +17,7 @@ mwcli works with any MediaWiki wiki, Wikimedia wikis included. [a Wikimedia CLI]
 ## Installation
 
 ```sh
-winget install mwcli.mwcli                       # Windows
+winget install mw                                # Windows (mwcli.mwcli)
 go install github.com/mwcli/mwcli/cmd/mw@latest  # with Go
 ```
 
